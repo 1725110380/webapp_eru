@@ -1,28 +1,41 @@
+$def with (numero_1, numero_2, resultado)
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="ISO-8859-1">
+</head>
 
-    <head>
+<body>
 
-        <title>Calculadora</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="ISO-8859-1">
+    <h1>Calculadora</h1>
 
-    </head>
+    <form method="POST">
 
-    <body>
-           <h1>Calculadora</h1>
-        <form method="POST">
-            <label>Numero 1</label><br>
-            <input type="number" name="numero_1" id="numero_1"><br>
-             <label>Numero 2</label><br>
-            <input type="number" name="numero_2" id="numero_2"><br>
-            <label>Resultado </label><br>
-            <input type="number" name="Resultado" id="Resultado"><br>
-            <button name = "suma" id ="suma">Sumar</button><br>
-        </form>
+        <fieldset>
+            <legend>Datos de entrada</legend>
+
+            <label for="numero_1">Numero 1</label><br>
+            <input type="number" name="numero_1" id="numero_1" value = $numero_1><br><br>
+
+            <label for="numero_2">Numero 2</label><br>
+            <input type="number" name="numero_2" id="numero_2" value = $numero_2><br>
+
+        </fieldset>
+
+        <br>
+
+        <label for="Resultado">Resultado</label><br>
+        <input type="number" name="Resultado" id="Resultado" value = $resultado><br><br>
+
+        <button name="operacion" id="operacion" value = "Sumar" >Sumar</button>
+        <button name="operacion" id="operacion" value = "Restar">Restar</button>
         
-        <a href="/">Index</a>
-    </body>
+    </form>
 
+    <br>
+    <a href="/">Index</a>
 
+</body>
 </html>
